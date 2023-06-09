@@ -8,8 +8,7 @@ def main():
     st.text("Berikut merupakan dataset penjualan video game")
 
     st.header("Data")
-    excel_file = "C:/Users/Latifa Firdausi/Documents/pasdjaya.csv"
-    df = pd.read_csv(excel_file)
+    df = pd.read_csv("pasdjaya.csv")
     st.dataframe(df)
 
     st.header("Grafik")
